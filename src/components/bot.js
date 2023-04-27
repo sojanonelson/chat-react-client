@@ -5,6 +5,8 @@ import './bot.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
+
 function App() {
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
@@ -15,7 +17,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post(process.env.REACT_APP_BASE_URL, { prompt })
+      .post(`${process.env.BACKEND_URL}/chat`, { prompt })
       .then((res) => {
         setResponse(res.data);
         setLoading(false);
@@ -29,7 +31,7 @@ function App() {
   return (
     <div className='main1'>
     <div className="wrapper">
-      <p className='title'>CHAT CODE</p>
+      <p className='title'>CHAT BOT</p>
       <form onSubmit={handleSubmit}>
         <img src={CGLogo} alt="" className={loading ? 'cg-logo loading' : 'cg-logo'} />
         <input
