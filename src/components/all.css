@@ -1,0 +1,79 @@
+@media only screen and (max-width: 700px) {
+    .main {
+      width: 25vw;
+      height: 10vw;
+      padding-left: 1.0rem;
+      padding-right: 1.0rem;
+    }
+  }
+
+@media only screen and (max-width: 375px) {
+    .main {
+      width: 10vw;
+      height: 10vw;
+      padding-left: 1.0rem;
+      padding-right: 1.0rem;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .main {
+      width: 18vw;
+      height: 10vw;
+      padding-left: 1.0rem;
+      padding-right: 1.0rem;
+    }
+  }
+
+ 
+
+  @media only screen and (max-width: 690px) {
+    .main {
+      width: 55vw;
+      height: 10vw;
+      padding-left: 1.0rem;
+      padding-right: 1.0rem;
+    }
+  }
+
+  @media only screen and (max-width: 442px) {
+    .main {
+      width: 5vw;
+      height: 10vw;
+      padding-left: 1.0rem;
+      padding-right: 1.0rem;
+    }
+  } 
+
+
+  @media only screen and (max-height: 670px) {
+    .main {height: 650px;}
+    }
+  
+  
+.app-main{
+  background-color: rgb(0, 255, 0);
+}
+
+.main-text{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  float: left;
+  padding-left: 30px;
+}
+
+@media only screen and (min-width: 918px) {
+  .main-text {
+    text-align: center;
+    padding-left: 490px;
+    color: rgb(255, 255, 255);
+
+  }
+} 
+
+
+.textf{
+  color:"white";
+}

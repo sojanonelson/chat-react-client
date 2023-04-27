@@ -1,0 +1,132 @@
+body {
+    text-align: center;
+    font-size: 30px;
+    padding: 70px;
+    background-color: #ff00c8;
+    color: #28aa1c;
+
+  }
+  
+  .title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    
+  }
+
+
+  
+  .wrapper form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .app-logo {
+    display: block;
+    margin: 10px auto 20px auto;
+    max-width: 30px;
+  }
+  
+  .wrapper form img {
+    max-width: 50px;
+  }
+  
+  .wrapper form input {
+    background-color: #b8b2b2;
+    color: #000000;
+    border: 1px solid #1f1e1e;
+    font-size: 19px;
+    padding: 10px 15px;
+    flex: 1;
+    border-radius: 4px;
+  }
+  
+  .wrapper form button {
+    border: 1px solid #000;
+    font-size: 19px;
+    padding: 10px 20px;
+    background-color: #61DAFB;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .replay{
+    color: white;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 25px;
+    padding-left: 25px;
+ }
+  .wrapper form button:hover {
+    opacity: 0.8;
+  }
+  
+  .response-area {
+    font-size: 20px;
+    max-width: 1100px;
+    display: block;
+    margin: 50px auto 0 auto;
+    color: white;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 50px 0 40px 0;
+    opacity: 0.5;
+  }
+  
+  .cg-logo.loading {
+    animation: rotation 2s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  
+  /* ANIMATIONS */
+  .code {
+    color: hsl(0, 0%, 28%);
+    font-size: 15px!important;
+    font-weight: bold!important;
+    font-family: monospace;
+    letter-spacing: 7px!important;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .code {
+    text-align: center;
+    margin-top: 400px;
+    
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 30%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
