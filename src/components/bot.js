@@ -17,7 +17,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post(`${process.env.BACKEND_URL}/chat`, { prompt })
+      .post(`https://botserverin.onrender.com/chat`, { prompt })
       .then((res) => {
         setResponse(res.data);
         setLoading(false);
