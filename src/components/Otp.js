@@ -37,7 +37,7 @@ function Otp({ userNumber }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`${process.env.BACKEND_URL}/otp`, { otp, userNumber }).then((res) => {
+    Axios.post(`https://botserverin.onrender.com/otp`, { otp, userNumber }).then((res) => {
       if (res.data.resp.valid) {
         history.push(`/home`);
       } else {
