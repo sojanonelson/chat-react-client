@@ -37,7 +37,7 @@ function Otp({ userNumber }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`https://good-pink-chicken.cyclic.app/otp`, { otp, userNumber }).then((res) => {
+    Axios.post(`${process.env.BACKEND_URL}/otp`, { otp, userNumber }).then((res) => {
       if (res.data.resp.valid) {
         history.push(`/home`);
       } else {
