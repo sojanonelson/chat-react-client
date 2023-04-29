@@ -39,7 +39,8 @@ function Otp({ userNumber }) {
     event.preventDefault();
     Axios.post(`https://botserverin.onrender.com/otp`, { otp, userNumber }).then((res) => {
       if (res.data.resp.valid) {
-        history.push(`/home`);
+        console.log("done");
+        history.push(`/chat`);
       } else {
         alert("Expired otp");
       }
