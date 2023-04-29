@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import chat from "./components/chat";
+import Chat from "./components/Chat";
 import Index from "./components/Index";
 import "./components/all.css";
 
@@ -8,7 +8,7 @@ const App = () => {
         
         <Router>
             <Route exact path="/" component={Index} />
-            <Route path="/chat" component={chat} />
+            <Route path="/chat" component={Chat} />
         </Router>
         
     )
