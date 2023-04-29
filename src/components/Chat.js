@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
 import CGLogo from '../image/load.png';
-import './bot.css';
+import './chat.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
