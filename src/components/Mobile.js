@@ -36,7 +36,7 @@ function Mobile({ status }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`https://botserverin.onrender.com/mobile`, { number }).then((res) => {
+    Axios.post(`http://localhost:8000/mobile`, { number }).then((res) => {
       if (res.data) {
         status(res.data.to);
         // setNumber("");

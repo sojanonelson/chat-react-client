@@ -130,3 +130,8 @@ body {
       background-position: 600px;
     }
   }
+.chat-res-div{
+ border: 3px solid aqua;
+ border-radius: 8px;
+ height: 20rem;
+}

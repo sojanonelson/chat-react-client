@@ -17,7 +17,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post(`https://botserverin.onrender.com/chat`, { prompt })
+      .post(`http://localhost:8000/chat`, { prompt })
       .then((res) => {
         setResponse(res.data);
         setLoading(false);
@@ -44,9 +44,12 @@ function App() {
         <button type="submit">Ask</button>
       </form>
       <p className='replay'>Bot replay:</p>
+      <div className='chat-res-div'>
+
       <p className="response-area">
         {loading ? 'Loading...' : response }
       </p>
+      </div>
       <h1 className='code'>coded by sojan</h1>
       
       <div className="coded_by_sojan"></div>
