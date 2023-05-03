@@ -36,7 +36,7 @@ function Mobile({ status }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`http://localhost:8000/mobile`, { number }).then((res) => {
+    Axios.post(`https://chat-v1-server.onrender.com/mobile`, { number }).then((res) => {
       if (res.data) {
         status(res.data.to);
         // setNumber("");

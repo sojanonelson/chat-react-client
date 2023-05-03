@@ -38,7 +38,7 @@ function Otp({ userNumber }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`http://localhost:8000/otp`, { otp, userNumber }).then((res) => {
+    Axios.post(`https://chat-v1-server.onrender.com/otp`, { otp, userNumber }).then((res) => {
       if (res.data.resp.valid) {
         console.log("done");
         history.push(`/chat`);
