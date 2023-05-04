@@ -38,7 +38,10 @@ function Otp({ userNumber }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`https://chat-v1-server.onrender.com/otp`, { otp, userNumber }).then((res) => {
+    Axios.post(`${process.env.REACT_APP_BASE_URL}/otp`, {
+      otp,
+      userNumber,
+    }).then((res) => {
       if (res.data.resp.valid) {
         console.log("done");
         history.push(`/chat`);
@@ -54,6 +57,10 @@ function Otp({ userNumber }) {
 
   return (
     <>
+     <div className="main">
+      <div>
+      <p className="main-text">OTP VERIFICATION</p>
+      </div>
       <form className={classes.form} noValidate onSubmit={handleSubmit}>
         <TextField
           variant="outlined"
@@ -64,8 +71,10 @@ function Otp({ userNumber }) {
           label="Otp"
           autoComplete="Otp"
           autoFocus
+          inputProps={{style : {color: "white" }}}
           value={otp}
           onChange={handleChange}
+          
         />
         <Button
           type="submit"
@@ -77,6 +86,7 @@ function Otp({ userNumber }) {
           Submit Otp
         </Button>
       </form>
+      </div>
     </>
   );
 }

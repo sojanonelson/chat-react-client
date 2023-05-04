@@ -4,15 +4,17 @@
       height: 10vw;
       padding-left: 1.0rem;
       padding-right: 1.0rem;
+     
     }
   }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
     .main {
-      width: 10vw;
-      height: 10vw;
-      padding-left: 1.0rem;
-      padding-right: 1.0rem;
+      width: 18vw;
+      height: 5vw;
+      padding-left: rem;
+      padding-right: rem;
+      
     }
   }
 
@@ -22,6 +24,7 @@
       height: 10vw;
       padding-left: 1.0rem;
       padding-right: 1.0rem;
+      
     }
   }
 
@@ -33,14 +36,15 @@
       height: 10vw;
       padding-left: 1.0rem;
       padding-right: 1.0rem;
+       
     }
   }
 
   @media only screen and (max-width: 442px) {
     .main {
-      width: 5vw;
+      width: 1vw;
       height: 10vw;
-      padding-left: 1.0rem;
+      padding-left: 1px;
       padding-right: 1.0rem;
     }
   } 
@@ -50,10 +54,7 @@
     .main {height: 650px;}
     }
   
-  
-.app-main{
-  background-color: rgb(0, 255, 0);
-}
+
 
 .main-text{
   color: white;
@@ -74,6 +75,14 @@
 } 
 
 
+@media only screen and (min-width: 1200px) {
+  .main-text {
+    text-align: center;
+    padding-left: 490px;
+    color: rgb(255, 255, 255);
+
+  }
+}
 .textf{
   color:"white";
 }
