@@ -36,12 +36,13 @@ function Mobile({ status }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Axios.post(`https://chat-v1-server.onrender.com/mobile`, { number }).then((res) => {
-      if (res.data) {
-        status(res.data.to);
-        // setNumber("");
+    Axios.post(`${process.env.REACT_APP_BASE_URL}/mobile`, { number }).then(
+      (res) => {
+        if (res.data) {
+          status(res.data.to);
+        }
       }
-    });
+    );
   };
 
   const handleChange = (event) => {
@@ -49,23 +50,26 @@ function Mobile({ status }) {
   };
 
   return (
-    
     <>
-      
       <div className="main">
-        <div><p className="main-text">OTP VERIFICATION</p></div>
+        <div>
+          <p className="main-text">OTP VERIFICATION</p>
+        </div>
         <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <TextField
             variant="outlined"
             margin="normal"
             required
             fullWidth
+            color="primary"
             type="number"
             label="Enter Number"
             autoComplete="contactnumber"
             autoFocus
+            inputProps={{style : {color: "white" , fontSize:"20px"}}}
             value={number}
             onChange={handleChange}
+            
           />
           <Button
             type="submit"
